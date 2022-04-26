@@ -27,7 +27,31 @@
 }
 
 .header {
-    background-color: #F1F1F1;
+    background-color: #e35156;
     text-align: center;
     padding: 20px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.column.side {
+    width: 25%;
+}
+
+.column.middle {
+    width: 50%;
+    background-color: rgb(118, 190, 213);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
 }
