@@ -4,9 +4,11 @@
   
   body {
     font-family: Arial;
+    color: blueviolet;
     padding: 10px;
     background: #7dc4cb;
   }
+
 .Navigation ul {
     position: fixed;
     top: 0;
@@ -40,6 +42,7 @@
 
 .header {
     background-color: #e35156;
+    color: black;
     text-align: center;
     padding: 25px;
 }
