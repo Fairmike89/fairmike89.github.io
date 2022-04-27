@@ -5,7 +5,7 @@
   body {
     font-family: Arial;
     padding: 10px;
-    background: #a969c2;
+    background: #d74242;
   }
 .Navigation ul {
     position: fixed;
@@ -39,7 +39,7 @@
 }
 
 .header {
-    background-color: #2f707c;
+    background-color: #281a70;
     text-align: center;
     padding: 25px;
 }
@@ -51,7 +51,7 @@
     float: left;
     padding: 15px;
 }
-
+  
 .column.side {
     width: 25%;
 }

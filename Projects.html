@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Final Project</title>
+        <link rel="stylesheet" href="style_5.css">
+    </head>
+
+    <body>
+
+        <div class="Navigation">
+            <ul class="nav-list">
+                <li><a  href="README.html">Home</a></li>
+                <li><a href="Hobbies.html">Hobbies</a></li>
+                <li><a href="Activies.html">Activies</a></li>
+                <li><a href="BookList.html">Book List</a></li>
+                <li><a class="active" href="Projects.html">Projects</a></li>
+            </ul>
+        </div>
+
+        <h1 class="header">Projects</h1>
+
+        <div class="row">
+
+            <div class="column side">
+                
+            </div>
+
+            <div class="column middle">
+                <p>Since this is only my first semester back in school since previously graduating from Columbia college back in 2017, and these past few weeks have been my first experience with programing I don't have a lot of Projects to show. However, I do want to share one of my first projects I did for my intro. to programing calss. This was the first bit of programing that felt real to me and showed be what you can do with the power of coding. This is an assingment that calculates how much paint and at what cost to paint a cylinder if you know the hight and radius.</p>
+
+                <xmp>
+import math
+
+def Get_Input_From_User(prompt):
+    while True:
+        try:
+            Value = float(input(prompt))
+            if Value < 0:
+                print("Negative numbers are not allowed. Try again.")
+                continue
+        except ValueError:
+            print("Only numerical values are allowed. Try again.")
+        else:
+            return Value
+
+def Do_Calculation_Again():
+    while True:
+        again = input("\nWould you like to do another calculation? y/n ")
+        if again not in {"y","n"}:
+            print("Please enter either y or n. ")
+            continue
+        elif again == "y":
+            main()
+        elif again == "n":
+            break
+        
+def main():
+
+    print("\nCalculating the cost and amont need to paint a Cylinder.\n")
+
+    raduis = Get_Input_From_User("What is the Radius of the Cylinder? ")
+    hight = Get_Input_From_User("What is the Hight of the Cylinder? ")
+    cost = Get_Input_From_User("How much does each pint of paint cost? ")
+
+    Area = (2 * math.pi * raduis * hight) + (2 * math.pi * pow(raduis,2))
+
+    Pints_Needed = int(math.ceil(Area/50))
+
+    Final_Cost = "${:,.2f}".format(Pints_Needed * cost)
+
+    print("\nYou will need", Pints_Needed, "pints of paint.")
+
+    print("\nAt a cost of", Final_Cost, "per pint.")
+
+    Do_Calculation_Again()
+
+main()
+                </xmp>
+            </div>
+
+        </div>
+    </body>
+</html>

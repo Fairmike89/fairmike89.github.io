@@ -53,19 +53,14 @@
     padding: 15px;
 }
 
-/* .column.side {
-    float: left;
-    width: 25%;
-}
-
-.column.middle {
-    float: inline-start;
-    width: 50%;
-    background-color: rgb(118, 190, 213);
-} */
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
