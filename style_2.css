@@ -8,9 +8,12 @@
     background: #a969c2;
   }
 .Navigation ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     overflow: hidden;
     background-color: #333;
 }
@@ -38,7 +41,7 @@
 .header {
     background-color: #2f707c;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 .header2 {
     text-align: center;
